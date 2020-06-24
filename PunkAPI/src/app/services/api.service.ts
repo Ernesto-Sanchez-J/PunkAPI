@@ -10,7 +10,7 @@ export class ApiService {
 
   private BeersURL = 'https://api.punkapi.com/v2/beers';
   constructor(private httpClient: HttpClient) { }
-}
+
 
   async getAll(){
     return await this.httpClient.get<IBeer[]>(this.BeersURL).toPromise();
