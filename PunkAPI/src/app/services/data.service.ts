@@ -10,7 +10,7 @@ export class DataService {
   constructor(private apiService: ApiService) { }
 
   async getBeers(){
-    return await this.apiService.getAll();
+    return await this.apiService.get();
   }
   async getBeersCount(count){
     return await this.apiService.getCount('?per_page=' + count);
