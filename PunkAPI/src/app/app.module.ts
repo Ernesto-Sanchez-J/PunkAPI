@@ -8,7 +8,7 @@ import { MatSortModule} from '@angular/material/sort';
 import { MatFormFieldModule} from '@angular/material/form-field';
 import { MatInputModule} from '@angular/material/input';
 import { MatButtonModule, MatButton} from '@angular/material/button';
-import { TableComponent } from '../tables/table.component';
+import { TableComponent } from './tables/table/table.component';
 
 @NgModule({
   declarations: [
