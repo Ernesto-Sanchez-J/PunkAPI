@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatSort } from '@angular/material/sort';
 import { DataService } from 'src/app/services/data.service';
-import { IBeer } from './interfaces/ibeer';
+import { IBeer } from '../interfaces/ibeer'; //no idea why this is an error
 
 @Component({
   selector: 'app-table',
