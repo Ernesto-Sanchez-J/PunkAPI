@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatSort } from '@angular/material/sort';
 import { DataService } from 'src/app/services/data.service';
-import { IBeer } from 'src/app/interfaces/ibeer'; 
+import { IBeer } from 'src/app/interfaces/ibeer';
 
 @Component({
   selector: 'app-table',
@@ -31,7 +31,7 @@ export class TableComponent implements OnInit {
     const data = await this.dataService.getBeers();
     this.dataSource = new MatTableDataSource(data);
 
-    // this.dataService.sort = this.sort;
+    this.dataService.sort = this.sort;
     this.sort.direction = 'asc';
     this.sort.active = this.displayedColumns[0];
   }
